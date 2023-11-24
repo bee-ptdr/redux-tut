@@ -1,8 +1,10 @@
 import React from 'react'
 
-function Home() {
+function Home(props) {
+    console.log("Home",props.data)
   return (
     <div>
+        <span className='cart-item'>{props.data.length}</span>
         <div className="add-to-cart">
             <img src="https://t3.ftcdn.net/jpg/06/20/26/14/360_F_620261443_xoQETRQEsQQUhaXWW4dZZYgXIfiqODYu.jpg" alt="" />
         </div>
@@ -16,7 +18,7 @@ function Home() {
                 <span>Price : $1000</span>
             </div>
             <div className="btn-wrapper">
-                <button>Add To Cart</button>
+                <button onClick={()=> props.addToCartHandler({price : 1000, name : "Iphone"})}>Add To Cart</button>
             </div>
         </div>
       

@@ -13,18 +13,35 @@
   align-items: center;
   margin-left: 10%;
 }
-.img-wrapper img{
+
+.img-wrapper img {
   width: 150px;
 
 }
-.btn-wrapper button{
+
+.btn-wrapper button {
   padding: 10px 15px;
-    border-radius: 7px;
-    margin-top: 10px;
+  border-radius: 7px;
+  margin-top: 10px;
 }
-.add-to-cart img{
+
+.add-to-cart img {
   width: 60px;
-    position: absolute;
-    right: 1%;
-    top: 1%;
+  position: absolute;
+  right: 1%;
+  top: 1%;
+}
+.cart-item{
+  position: absolute;
+    right: 10px;
+    z-index: 1;
+    background: bacl;
+    background: black;
+    color: white;
+  
+    padding: -1px;
+    border-radius: 50%;
+   
+    width: 26px;
+    text-align: center;
 }
